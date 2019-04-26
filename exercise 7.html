@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Sentence Generator_Step2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+		/*  =========================================================================
+		    1. make an array of words
+		    ==========================================================================   */
+	    	
+			var noun1 = [ "Labador Retriever", "German Shepherd", "Golden Retriever", "Shiba Inu", "Yorkshire Terrier", "Jindo", "Beagle", "Poodle", "Australian Shepherd", "Corgi"];
+			var noun2 = [ "brown", "blue", "hazel", "golden", "speckled", "heterochromia"];
+			var adj = [ "black", "brown", "white", "tan", "red", "grey" ];
+			
+			// Array: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+		
+
+	    /*  =========================================================================
+		    2. take each array and pick a word at random 
+		    ==========================================================================   */
+	    
+			function pickRandomWord(x){
+				y = x[Math.floor(Math.random()*x.length)];
+				return y;
+			}
+
+
+			// Math.floor: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
+		    // Math.random: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+		    // Array.length: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length
+
+
+	    /*  =========================================================================
+		    3. print a random word from the array on the browser
+		    ==========================================================================   */
+
+			function printRandomWord() {					   
+			
+				// call the function from step 2 for each list
+				var list_noun1 = pickRandomWord(noun1);
+				var list_noun2  = pickRandomWord(noun2);
+				var list_adj = pickRandomWord(adj);
+
+				// print the selected word from list on the browser
+					$('.list1').html(list_noun1);
+					$('.list2').html(list_noun2);
+					$('.list3').html(list_adj);
+				// .html(): http://api.jquery.com/html/
+
+			}
+	
+			// call the function when the html page is initially loaded
+			printRandomWord();
+
+			// call the function when a user click a button 
+			$('button').click(function(){		
+				printRandomWord();
+			});
+
+			//.click(): https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click
+
+		});
+	    </script>
+		<p>
+			Your future best friend is a <span class="list1"></span> with <span class="list2"></span> eyes and a <span class="list3"></span> coat.
+		</p>
+		<button>
+			<img src="emoji.png" />
+		</button>
+		<style>
+			body {
+				font-size: 100px;
+				font-family: "Helvetica", sans-serif;
+				padding-right: 120px;
+				padding-left: 120px;
+			}
+			.list1 {
+				color:pink;
+			}
+			.list2 {
+				color:pink;
+			}
+			.list3 {
+				color:pink;
+			}
+		</style>
+	</body>	
+</html>
