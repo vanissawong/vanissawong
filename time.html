@@ -39,6 +39,24 @@ function getStylesheet() {
       if (22 <= currentTime&&currentTime <= 24) {
        document.write("<link rel='stylesheet' href='2.css' type='text/css'>");
       }
+
+      var rectangle1 = document.getElementById('box');
+
+// center point of the box
+var rectangle1y= 50;
+
+document.addEventListener('mousemove', function(e) {
+    var x = e.pageX,
+        y = e.pageY;
+    
+    var dx = x - boxX,
+        dy = y - boxY;
+    
+    var distance = Math.sqrt(dx *dx + dy * dy);
+    
+    box.style.width = box.style.height = distance + 'px';
+    
+}, false);
 }
 
 getStylesheet();
