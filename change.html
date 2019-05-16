@@ -2,11 +2,8 @@
 <html>
       <head>
             <title></title>
-            <script src="jquery-3.3.1.min.js"></script>
-      </head>
-
-
-
+<!--             <script src="jquery.min.js"></script>
+ -->      </head>
       <body>
             <br>
 
@@ -21,11 +18,12 @@
       </body>
 
 <script>
-<!--
+
 function getStylesheet() {
-      var currentTime = new Date().getHours();
+      var currentTime = new Date().getSeconds();
       if (currentTime = 1) {
        document.write("<link rel='stylesheet' href='1.css' type='text/css'>");
+       do
       }
       if (currentTime = 2) {
        document.write("<link rel='stylesheet' href='2.css' type='text/css'>");
@@ -97,9 +95,9 @@ function getStylesheet() {
        document.write("<link rel='stylesheet' href='24.css' type='text/css'>");
       }
 }
+      getStylesheet();
 
-getStylesheet();
--->
+
 </script>
 
 <noscript><link href="main.css" rel="stylesheet"></noscript>

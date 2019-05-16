@@ -3,138 +3,140 @@
 <html>
 	<head>
 		<title>Exercise 5</title>
-		<link rel="stylesheet" type="text/css" href="./exercise6.css" />
 	</head>
 
 	<body>
-		<p><a href="../index.html">Back to Index</a></p>
 		<br>
 
-		<!--A1-->
-		<div class="circle1"></div>
-		<div class="circle2"></div>
+		<!--R1-->
 		<div class="rectangle1"></div>
-		<!--A2-->
-		<div class="triangle1"></div>
+		<div class="circle1"></div>
 		<div class="rectangle2"></div>
-		<!--A3-->
+		<!--R2-->
 		<div class="rectangle3"></div>
+		<div class="circle2"></div>
+		<!--R3-->
 		<div class="rectangle4"></div>
-		<div class="rectangle4-2"></div>
 		<div class="rectangle5"></div>
-		<!--A4-->
 		<div class="rectangle6"></div>
-		<div class="circle3"></div>
-		<div class="circle4"></div>
-		<div class="circle4-2"></div>
-		<!--A5-->
-		<div class="circle5"></div>
 		<div class="rectangle7"></div>
-		<div class="circle6"></div>
-		<div class="circle6-2"></div>
+		<!--R4-->
+		<div class="circle3"></div>
+		<div class="rectangle8"></div>
+		<!--R5-->
+		<div class="rectangle9"></div>
+		<div class="circle4"></div>
+		<div class="rectangle10"></div>
 
 	</body>
 
 <style>
-/*A1 outer circle*/
+body{
+	background-color: floralwhite;
+	font-family: "helvetica", sans-serif;
+}
+/*R1 main form*/
+.rectangle1 {
+	width: 50px;
+	height: 150px;
+	background: palevioletred;
+	position: absolute;
+	top: 160px;
+	left: 100px;
+}
+.rectangle1:hover {
+	background-color: deeppink; 
+}
+.circle1:hover {
+	background-color: crimson;
+}
+.rectangle2 {
+	width: 50px;
+	height: 110px;
+	background: pink;
+	position: absolute;
+	top: 200px;
+	left: 170px;
+	transform: skewX(30deg);
+}
+.rectangle2: hover{
+	background-color: lightcoral;
+}
 .circle1 {
-	width: 200px;
-	height: 200px;
-	background: orange;
+	width: 120px;
+	height: 120px;
+	background: salmon;
 	border-radius: 100px;
 	position: absolute;
 	top: 100px;
 	left: 100px;
+	z-index: 3;
 }
-/*A1 inner circle*/
-.circle2 {
-	width: 100px;
-	height: 100px;
-	background: beige;
-	border-radius: 50px;
-	position: absolute;
-	top: 150px;
-	left: 150px;
-}
-/*A1 stroke*/
-.rectangle1 {
-	width: 50px;
-	height: 200px;
-	background: dodgerblue;
-	position: absolute;
-	top: 100px;
-	left: 300px;
 
-	/* Transition */
-	-webkit-transition-property: height;
-	-webkit-transition-duration: 1s;
-	-webkit-transition-timing-function: ease-in;
-
-	transition-property: height;
-	transition-duration: 1s;
-	transition-timing-function: ease-in;
-}
-.rectangle1:hover {
-	height: 0px;
-	background-color: #00CED1;
-}
 
 /*-----------------------------------------------*/
 
-/*A2 main form*/
-.triangle1 {
-	width: 0;
-	height: 0;
-	border-left: 100px solid transparent;
-	border-right: 100px solid transparent;
-	border-bottom: 200px solid dodgerblue;
-	position: absolute;
-	top: 100px;
-	left: 400px;
-}
-/*A2 cross-bar*/
-.rectangle2 {
-	width: 200px;
-	height: 50px;
-	background: orange;
-	position: absolute;
-	top: 190px;
-	left: 400px;
-
-	/* Transition */
-	-webkit-transition-property: width;
-	-webkit-transition-duration: 1s;
-	-webkit-transition-timing-function: ease-in;
-
-	transition-property: width;
-	transition-duration: 1s;
-	transition-timing-function: ease-in;
-}
-.rectangle2:hover {
-	width: 0px;
-	background-color: salmon;
-}
-
-/*-----------------------------------------------*/
-
-/*A3 main form*/
+/*R2 main form*/
 .rectangle3 {
 	width: 200px;
 	height: 200px;
-	background: orange;
+	background-color: gold;
 	position: absolute;
-	top: 100px;
-	left: 650px;
+	top: 110px;
+	left: 330px;
 }
-/*A3 center fill*/
-.rectangle4 {
-	width: 100px;
-	height: 50px;
-	background: dodgerblue;
+.circle2 {
+	width: 130px;
+	height: 130px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: : 50px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background: lemonchiffon;
 	position: absolute;
-	top: 150px;
-	left: 700px;
-	z-index: 3;
+	top: 180px;
+	left: 400px;
+}
+.circle2:hover {
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+    @-webkit-keyframes spin {
+    0% {
+    background: lemonchiffon;
+    transform: rotate(0deg);
+    border-radius: 100px;
+}
+
+    50% {
+    background: orange;
+    transform: rotate(180deg);
+    border-radius: 0px;
+}
+
+    100% {
+    background: lemonchiffon;
+    transform: rotate(360deg);
+    border-radius: 100px;
+} 
+}
+.rectangle3:hover {
+	background-color: yellow;
+}
+
+/*-----------------------------------------------*/
+
+/*R3 main form*/
+.rectangle4 {
+	width: 50px;
+	height: 200px;
+	background: yellowgreen;
+	position: absolute;
+	top: 110px;
+	left: 610px;
 
 	/* Transition */
 	-webkit-transition-property: width;
@@ -146,59 +148,103 @@
 	transition-timing-function: ease-in;
 }
 .rectangle4:hover {
-	width: 0px;
-	background-color: #00CED1;
+	background-color: chartreuse;
 }
-
-.rectangle4-2 {
-	width: 100px;
-	height: 50px;
-	background: beige;
-	position: absolute;
-	top: 150px;
-	left: 700px;
-}
-
-/*A3 bottom hole*/
 .rectangle5 {
-	width: 100px;
-	height: 50px;
-	background: beige;
+	width: 60px;
+	height: 20px;
+	background: floralwhite;
 	position: absolute;
-	top: 250px;
-	left: 700px;
+	top: 160px;
+	left: 660px;
+	z-index: 3;
+
+	/* Transition */
+	-webkit-transition-property: width;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease-in;
+
+	transition-property: width;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
 }
-
-/*-----------------------------------------------*/
-
-/*A4 main form*/
+.rectangle5:hover {
+	width: 0px;
+	background-color: seagreen;
+}
 .rectangle6 {
-	width: 200px;
-	height: 200px;
-	background: dodgerblue;
+	width: 110px;
+	height: 115px;
+	background: palegreen;
 	position: absolute;
-	top: 100px;
-	left: 900px;
+	top: 110px;
+	left: 660px;
 }
-/*A4 center hole*/
-.circle3 {
+.rectangle6:hover {
+	background-color: darkseagreen;
+}
+.rectangle7 {
 	width: 50px;
-	height: 50px;
-	background: beige;
-	border-radius: 25px;
-	position: absolute;
-	top: 140px;
-	left: 975px;
-}
-/*A4 bottom hole*/
-.circle4 {
-	width: 100px;
-	height: 75px;
-	background: orange;
-	border-radius: 25px 25px 0px 0px;
+	height: 85px;
+	background: mediumseagreen;
 	position: absolute;
 	top: 225px;
-	left: 950px;
+	left: 700px;
+	transform: skewX(20deg);
+}
+.rectangle7:hover {
+	background-color: green;
+}
+/*-----------------------------------------------*/
+
+/*R4 main form*/
+.circle3 {
+	width: 210px;
+	height: 210px;
+	background: lightskyblue;
+	border-radius: 100px;
+	position: absolute;
+	top: 105px;
+	left: 850px;
+}
+
+.circle3:hover { 
+    animation-name: twirl;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+    @-webkit-keyframes twirl {
+    0% {
+    background: lightblue;
+    transform: rotate(0deg);
+    border-radius: 100px;
+}
+
+    50% {
+    background: powderblue);;
+    transform: rotate(180deg);
+    border-radius: 0px;
+}
+
+    100% {
+    background: lightblue;
+    transform: rotate(360deg);
+    border-radius: 100px;
+} 
+}
+.rectangle8 {
+	width: 120px;
+	height: 105px;
+	background: cornflowerblue;
+	border-top-left-radius: 0px;
+	border-top-right-radius: : 0px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 100px;
+	position: absolute;
+	top: 210px;
+	left: 940px;
 	z-index: 3;
 
 	/* Transition */
@@ -210,50 +256,43 @@
 	transition-duration: 1s;
 	transition-timing-function: ease-in;	
 }
-.circle4:hover {
-	height: 0px;
-	background-color: salmon;
+.rectangle8:hover {
+	background-color: powderblue;
 }
-.circle4-2 {
-	width: 100px;
-	height: 75px;
-	background: beige;
-	border-radius: 25px 25px 0px 0px;
-	position: absolute;
-	top: 225px;
-	left: 950px;
-}
+
 
 /*-----------------------------------------------*/
 
-/*A5 main form*/
-.circle5 {
-	width: 200px;
-	height: 200px;
-	background: orange;
+/*R5 main form*/
+.rectangle9 {
+	width: 50px;
+	height: 150px;
+	background: lavender;
+	position: absolute;
+	top: 160px;
+	left: 1140px;
+	z-index: 10px;
+}
+.rectangle9:hover {
+	background-color: mediumpurple;
+}
+.rectangle10{
+	width: 0px;
+	height: 0px;
+	border-bottom: 150px solid orchid;
+    border-right: 100px solid transparent;
+	position: absolute;
+	top: 160px;
+	left: 1190px;
+}
+.circle4 {
+	width: 120px;
+	height: 120px;
+	background: mediumorchid;
 	border-radius: 100px;
 	position: absolute;
 	top: 100px;
-	left: 1150px;
-}
-/*A5 center hole*/
-.rectangle7 {
-	width: 150px;
-	height: 50px;
-	background: beige;
-	position: absolute;
-	top: 150px;
-	left: 1125px;
-}
-/*bottom hole*/
-.circle6 {
-	width: 50px;
-	height: 50px;
-	background: dodgerblue;
-	border-radius: 25px;
-	position: absolute;
-	top: 225px;
-	left: 1225px;
+	left: 1140px;
 	z-index: 3;
 
 	/* Transition */
@@ -265,19 +304,11 @@
 	transition-duration: 1s;
 	transition-timing-function: ease-in;
 }
-.circle6:hover {
+.circle4:hover {
 	height: 0px;
-	background-color: #00CED1;
+	background-color: violet;
 }
-.circle6-2 {
-	width: 50px;
-	height: 50px;
-	background: beige;
-	border-radius: 25px;
-	position: absolute;
-	top: 225px;
-	left: 1225px;
-}
+
 
 </style>
 
