@@ -1,0 +1,148 @@
+body { 
+  font-family: Helvetica, sans-serif;
+  background-color: #EAEAEA;
+}
+
+.acai{
+  position: absolute;
+  left: 100px;
+  top: 550px;
+}
+
+.fuji{
+  position: absolute;
+  left: 720px;
+  top: 200px;
+}
+
+.laoganma{
+  position: absolute;
+  left: 730px;
+  top: 370px;
+}
+
+.pancit{
+  position: absolute;
+  left: 1350px;
+  top: 620px;
+}
+
+.envelope{
+  position: absolute;
+  left: 900px;
+  top: 280px;
+}
+
+.reflection{
+  position: absolute;
+  left: 470px;
+  top: 450px;
+}
+
+.stars{
+  position: absolute;
+  left: 570px;
+  top: 350px;
+}
+
+.weather{
+  position: absolute;
+  left: 920px;
+  top: 150px;
+}
+
+.coffee{
+  position: absolute;
+  left: 100px;
+  top: 370px;
+}
+
+.slippers{
+  position: absolute;
+  left: 100px;
+  top: 200px;
+}
+
+.religious{
+  position: absolute;
+  left: 900px;
+  top: 430px;
+}
+
+.keychain{
+  position: absolute;
+  left: 640px;
+  top: 510px;
+}
+
+.trophy{
+  position: absolute;
+  left: 790px;
+  top: 580px;
+}
+
+.piercing{
+  position: absolute;
+  left: 1400px;
+  top: 160px;	
+}
+
+.hyemi{
+  position: absolute;
+  left: 550px;
+  top: 160px;
+}
+
+.teddy{
+  position: absolute;
+  left: 400px;
+  top: 720px;
+}
+
+.header {
+  margin-left: 75px;
+  overflow: hidden;
+  background-color: none;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.header a:hover {
+  color: white;
+}
+
+.header a.active {
+  color: white;
+}
+
+.header-right {
+  float: right;
+  padding-right: 88px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
