@@ -2,57 +2,83 @@ body{
   font-family: Helvetica, sans-serif;
   background-color: #EAEAEA;
 }
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
 
 .grid-container {
+  position: absolute;
+  top: 810px;
+  left: 150px;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between 20px;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: 300px 300px;
   grid-gap: 10px;
-  background-color: #EAEAEA;
   padding: 40px;
+  padding-bottom: 100px;
+
 }
 .grid-container > div {
-  background-color: #EAEAEA;
   text-align: left;
 }
 .title{
   color: GREY;
-  font-size: 20px;
+  font-size: 15px;
   font-variant: small-caps;
   padding-top: 30px;
 }
 .entry{
   color: black;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 15px;
+  font-size: 20px;
+  line-height: 25px;
 }
 
  .top{
-  padding: 90px;
   margin-left: 440px;
-  }
+}
 
   .image {
+  position: static;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  padding-top:40px;
+  padding-bottom: 10px;
 }
 
 a{
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 15px;
+  line-height: 30px;
 }
 
 p{ 
-  font-size: 25px;
-  line-height: 40px;
-  padding: 40px;
-  width: 780px;
+  position: absolute;
+  top: 880px;
+  left: 900px;
+  font-size: 18px;
+  line-height: 38px;
+  width: 650px;
+  margin-right: 0;
+  padding-bottom: 100px;
 }
 
+a.specific {
+  font-size: 18px;
+  line-height: 38px;
+  color: pink;
+  text-decoration: none;
+}
+
+a.general {
+  font-size: 18px;
+  line-height: 38px;
+  color: lightblue;
+  text-decoration: none;
+}
 
 .header {
   margin-left: 75px;
@@ -60,7 +86,8 @@ p{
   background-color: none;
   padding: 10px 10px;
 }
-.header a {
+
+.header a.sort {
   float: left;
   color: black;
   text-align: center;
@@ -70,21 +97,32 @@ p{
   line-height: 25px;
   border-radius: 4px;
 }
+
 .header a.logo {
   font-size: 40px;
   font-weight: bold;
   line-height: 60px;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  border-radius: 4px;
 }
+
 .header a:hover {
   color: white;
 }
+
 .header a.active {
   color: white;
 }
+
 .header-right {
   float: right;
   padding-right: 88px;
 }
+
 @media screen and (max-width: 500px) {
   .header a {
     float: none;

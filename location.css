@@ -3,6 +3,12 @@ body {
   background-color: #EAEAEA;
 }
 
+.image{
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+
 .acai{
   position: absolute;
   left: 100px;
@@ -18,79 +24,91 @@ body {
 .laoganma{
   position: absolute;
   left: 730px;
-  top: 370px;
+  top: 330px;
 }
 
 .pancit{
   position: absolute;
   left: 1350px;
-  top: 620px;
+  top: 700px;
 }
 
 .envelope{
   position: absolute;
-  left: 900px;
-  top: 280px;
+  left: 870px;
+  top: 260px;
 }
 
 .reflection{
   position: absolute;
-  left: 470px;
-  top: 450px;
+  left: 600px;
+  top: 430px;
 }
 
 .stars{
   position: absolute;
-  left: 570px;
-  top: 350px;
+  left: 610px;
+  top: 300px;
 }
 
 .weather{
   position: absolute;
-  left: 920px;
-  top: 150px;
+  left: 870px;
+  top: 170px;
 }
 
 .coffee{
   position: absolute;
   left: 100px;
-  top: 370px;
+  top: 410px;
 }
 
 .slippers{
   position: absolute;
   left: 100px;
-  top: 200px;
+  top: 280px;
+}
+
+.bed {
+  position: absolute;
+  left: 490px;
+  top: 300px;
 }
 
 .religious{
   position: absolute;
-  left: 900px;
-  top: 430px;
+  left: 850px;
+  top: 370px;
 }
 
 .keychain{
   position: absolute;
-  left: 640px;
-  top: 510px;
+  left: 730px;
+  top: 430px;
 }
 
 .trophy{
   position: absolute;
   left: 790px;
-  top: 580px;
+  top: 530px;
 }
 
 .piercing{
   position: absolute;
   left: 1400px;
-  top: 160px;	
+  top: 290px;	
+}
+
+.giraffe {
+  position: absolute;
+  left: 1400px;
+  top: 400px;
 }
 
 .hyemi{
   position: absolute;
-  left: 550px;
-  top: 160px;
+  left: 590px;
+  top: 170px;
 }
 
 .teddy{
