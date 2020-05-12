@@ -5,13 +5,13 @@ body {
 
 .image{
   position: absolute;
-  left: 100px;
-  top: 100px;
+  left: 50px;
+  top: 120px;
 }
 
 .acai{
   position: absolute;
-  left: 100px;
+  left: 150px;
   top: 550px;
 }
 
@@ -29,7 +29,7 @@ body {
 
 .pancit{
   position: absolute;
-  left: 1350px;
+  left: 1500px;
   top: 700px;
 }
 
@@ -41,14 +41,14 @@ body {
 
 .reflection{
   position: absolute;
-  left: 600px;
-  top: 430px;
+  left: 700px;
+  top: 540px;
 }
 
 .stars{
   position: absolute;
-  left: 610px;
-  top: 300px;
+  left: 625px;
+  top: 310px;
 }
 
 .weather{
@@ -59,20 +59,20 @@ body {
 
 .coffee{
   position: absolute;
-  left: 100px;
+  left: 150px;
   top: 410px;
 }
 
 .slippers{
   position: absolute;
-  left: 100px;
+  left: 150px;
   top: 280px;
 }
 
 .bed {
   position: absolute;
-  left: 490px;
-  top: 300px;
+  left: 880px;
+  top: 500px;
 }
 
 .religious{
@@ -95,27 +95,34 @@ body {
 
 .piercing{
   position: absolute;
-  left: 1400px;
+  left: 1350px;
   top: 290px;	
+}
+
+.pikachu {
+  position: absolute;
+  left: 1250px;
+  top: 320px;
 }
 
 .giraffe {
   position: absolute;
-  left: 1400px;
+  left: 1350px;
   top: 400px;
 }
 
 .hyemi{
   position: absolute;
-  left: 590px;
-  top: 170px;
+  left: 960px;
+  top: 380px;
 }
 
 .teddy{
   position: absolute;
-  left: 400px;
+  left: 550px;
   top: 720px;
 }
+
 
 .header {
   margin-left: 75px;

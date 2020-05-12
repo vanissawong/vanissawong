@@ -1,7 +1,14 @@
 body{
   font-family: Helvetica, sans-serif;
   background-color: #EAEAEA;
+  color:white;
 }
+
+.background-tint {
+  background-color: rgba(200,100,0,.5); // Tint color
+  background-blend-mode: multiply;
+}
+
 .column {
   float: left;
   width: 50%;
@@ -10,8 +17,8 @@ body{
 
 .grid-container {
   position: absolute;
-  top: 810px;
-  left: 150px;
+  top: 100px;
+  left: 855px;
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between 20px;
@@ -24,30 +31,58 @@ body{
 .grid-container > div {
   text-align: left;
 }
+
+.objecttitle{
+  color: white;
+  font-size: 30px;
+  font-variant: small-caps;
+  padding-top: 30px;
+}
+
+.objectname{
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+}
 .title{
-  color: GREY;
+  color: white;
   font-size: 15px;
   font-variant: small-caps;
   padding-top: 30px;
 }
 .entry{
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
 }
 
- .top{
+.top{
   margin-left: 440px;
 }
 
-  .image {
-  position: static;
+.object {
+  position: absolute;
+  top: 80px;
+  left: 150px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding-top:40px;
   padding-bottom: 10px;
+}
+
+.image {
+  position: absolute;
+  top: 120px;
+  left: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:40px;
+  padding-bottom: 10px;
+  z-index: -1;
 }
 
 a{
