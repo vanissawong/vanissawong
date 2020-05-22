@@ -1,5 +1,4 @@
 body {
-
   margin-right: 100px;
   position: center;
   font-family: Helvetica, sans-serif;
@@ -8,7 +7,7 @@ body {
 }
 
 hr {
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 5px;
   width: 150px;
   position: left;
@@ -16,11 +15,12 @@ hr {
 }
 
 h1 {
-	padding-left: 50px;
+  padding-left: 50px;
   padding-top: 50px;
   font-size: 30px;
-  color: white;
+  color: black;
 }
+
 
 img {
   margin-left: 120px;
@@ -43,6 +43,7 @@ img {
   text-align: center;
   padding: 12px;
   text-decoration: none;
+  font-weight: bold;
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
@@ -76,6 +77,8 @@ img {
   .header-right {
     float: none;
   }
+
+
 
 
 

@@ -1,12 +1,7 @@
 body{
   font-family: Helvetica, sans-serif;
   background-color: #EAEAEA;
-  color:white;
-}
-
-.background-tint {
-  background-color: rgba(200,100,0,.5); // Tint color
-  background-blend-mode: multiply;
+  color: black;
 }
 
 .column {
@@ -33,26 +28,27 @@ body{
 }
 
 .objecttitle{
-  color: white;
+  color: black;
   font-size: 30px;
   font-variant: small-caps;
   padding-top: 30px;
 }
 
 .objectname{
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
+  width: 400px;
 }
 .title{
-  color: white;
+  color: black;
   font-size: 15px;
   font-variant: small-caps;
   padding-top: 30px;
 }
 .entry{
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -92,27 +88,33 @@ a{
 
 p{ 
   position: absolute;
-  top: 880px;
-  left: 900px;
-  font-size: 18px;
-  line-height: 38px;
-  width: 650px;
+  top: 900px;
+  left: 300px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 48px;
+  width: 1100px;
   margin-right: 0;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 a.specific {
-  font-size: 18px;
-  line-height: 38px;
-  color: pink;
+  font-size: 20px;
+  line-height: 48px;
+  color: #FF4D73;
+  font-weight: bold;
   text-decoration: none;
+  border-bottom: 2px dashed #FF4D73;
+  padding-top: 2px;
 }
 
 a.general {
-  font-size: 18px;
-  line-height: 38px;
-  color: lightblue;
-  text-decoration: none;
+  font-size: 20px;zz
+  line-height: 48px;
+  color: #68D8EF;
+  font-weight: bold;
+  text-decoration: underline dashed #68D8EF;
+  text-underline-position: under;
 }
 
 .header {
@@ -128,6 +130,7 @@ a.general {
   text-align: center;
   padding: 12px;
   text-decoration: none;
+  font-weight: bold;
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
